@@ -1,0 +1,127 @@
+/* Footer.css */
+
+/* General Footer Styles */
+.footer {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 0 15px;
+  }
+  
+  .footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .footer-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #d1d1d1;
+  }
+  
+  .footer-section a {
+    color: #d1d1d1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section a:hover {
+    color: #FFD700; /* Gold color on hover */
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .footer-section button {
+    padding: 10px 20px;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer-section button:hover {
+    background-color: #ffcc00;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-icons a {
+    font-size: 24px;
+    color: #d1d1d1;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #FFD700;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      margin-bottom: 20px;
+    }
+  
+    .footer-section input[type="email"] {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  

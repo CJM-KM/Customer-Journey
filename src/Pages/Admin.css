@@ -1,0 +1,107 @@
+.admin-dashboard {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Top section: 4 cards on top-left, review summary on top-right */
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Small summary cards in a 2x2 grid */
+.summary-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+  flex: 1;
+}
+
+/* Reduced size for each box */
+.summary-box {
+  background-color: white;
+  padding: 0.9rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  font-size: 0.95rem;
+  color: #444;
+  font-weight: 500;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.summary-box:hover {
+  transform: scale(1.03);
+}
+
+/* Review summary on the top right */
+.rating-summary-section {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.rating-summary-section h3 {
+  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
+}
+
+.rating-bar {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+}
+
+.rating-bar span:first-child {
+  width: 40px;
+}
+
+.bar-container {
+  flex: 1;
+  height: 10px;
+  background-color: #e0e0e0;
+  margin: 0 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background-color: #f39c12;
+}
+
+/* Bottom section (category table & all reviews) */
+.bottom-section {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.category-table, .review-list {
+  flex: 1;
+}
+
+.category-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.category-table th, .category-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.review-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.review-list li {
+  border-bottom: 1px solid #eee;
+  padding: 0.75rem 0;
+}

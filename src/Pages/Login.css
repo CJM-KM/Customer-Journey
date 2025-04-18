@@ -1,0 +1,45 @@
+.login-container {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+form button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background-color: #6a48f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #4a32c3;
+}
+
+.role-select {
+  font-weight: bold;
+}

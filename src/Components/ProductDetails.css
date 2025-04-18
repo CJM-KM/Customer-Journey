@@ -1,0 +1,110 @@
+.reviews-container {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+
+/* Grid for reviews */
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+/* Tablet view - 2 per row */
+@media (max-width: 900px) {
+  .review-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile view - 1 per row */
+@media (max-width: 600px) {
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card Styles */
+.review-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: transform 0.2s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Header with user + date */
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+/* User Info */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.user-info img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Review date */
+.review-date {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* Rating */
+.review-rating {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: #e63946; /* red tone */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Review content */
+.review-card p {
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.review-card p strong {
+  font-weight: bold;
+}
+
+/* Read more button */
+.read-more {
+  margin-top: 1rem;
+  border: 1px solid #6a48f6;
+  padding: 0.5rem 1.25rem;
+  border-radius: 999px;
+  background: white;
+  color: #6a48f6;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.read-more:hover {
+  background-color: #6a48f6;
+  color: white;
+}
